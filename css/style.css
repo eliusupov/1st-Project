@@ -1,0 +1,171 @@
+body {
+	font-family: 'Orbitron', sans-serif;
+	text-align: center;
+	height: 100%;
+	background: linear-gradient(to right, #25A5C4, #B3DDFF);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.col-centered{
+	float: none;
+	margin: 0 auto;
+}
+
+#big-header {
+	font-size: 75px;
+}
+
+#small-header {
+	font-size: 40px;
+}
+
+#form-container #form .form-group label {
+	font-size: 30px;
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+#form-container #form .form-group textarea {
+	height: auto;
+	resize: none;
+	overflow: auto;
+}
+
+#form-container #form .form-group {
+	margin: 0;
+}
+
+#form-container #form .error-div {
+	height: 20px;
+	margin: 0 auto;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#form-container #form .form-group #title {
+	width: 70%;
+}
+
+#form-container #form .form-group #discription {
+	width: 70%;
+}
+
+#form-container #form .form-group #time {
+	width: 40%;
+}
+
+#form-container #form .form-group #date {
+	width: 40%;
+}
+
+#form-container #form #reset {
+	margin-right: 5px;
+}
+
+#collapsebtn {
+	font-size: 25px;
+	margin: 10px;
+}
+
+#content #form-container {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 20px;
+	border: 2px solid #f9f9f9;
+	padding: 10px;
+}
+
+#content #task-board-container {
+	background-image: url('../assets/woodwall.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+	border: 2px solid #f9f9f9;
+	border-radius: 1px;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}
+
+li .task-content {
+	font-family: 'Helvetica', sans-serif; 
+	margin: 0 auto;
+	padding: 5px;
+	height: 90%;
+	width: 90%;
+	overflow: auto;
+}
+
+li .task-content #task-title {
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+li .task-content #task-discription {
+	font-size: 18px;
+}
+
+li .task-content #task-footer {
+	font-size: 12px;
+	height: 10%;
+	width: 100%;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	position: absolute;
+}
+
+#footer-container {
+	margin-top: 5px;
+	padding: 5px;
+	width: 100%;
+	height: 20px;
+	font-size: 20px;
+	bottom: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	height: 100%;
+	width: 100%;
+}
+
+li {
+	display: inline-block;
+	height: 30%;
+	width: 30%;
+	margin: 5px;
+	animation-duration: 0.5s;
+	-webkit-animation-duration: 0.5s;
+	animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+}
+button {
+	margin: 5px;
+}
+li .speech-bubble {
+	position: relative;
+	background: #f9f9f9;
+	border-radius: .4em;
+	margin: 15px;
+	padding: 5px;
+	border: 2px solid #333;
+}
+
+li div .trash-icon {
+	visibility: hidden;
+	top: 0;
+	right: 0;
+	margin: 5px;
+	font-size: 15px;
+	position: absolute;
+}
+
+li .task-content:hover .trash-icon {
+	visibility: visible;
+}

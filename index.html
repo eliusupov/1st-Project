@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>World's Best Website</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--BoostrapCDN-->
+	<link rel="stylesheet" 
+				href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+				integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--Custom Font-->
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	<!--Style Sheet-->
+	<link href="./css/style.css" rel="stylesheet">
+	<!--Animate CSS-->
+	<link href="./css/animate.css" rel="stylesheet">
+</head>
+
+<body>
+	
+ <!--Contains the entire page	-->
+<div class="container"> 
+	<header>
+		<div class="page-header row col">
+			<h1 id="big-header">Task Board</h1><small id="small-header">Organize Your Day</small>
+		</div>
+	</header>		
+
+	<section>
+
+		<!--Contains the content of the page-->
+		<div id="content" class="container">
+			
+			<button id="collapsebtn" type="button" class="btn btn-default"
+							data-toggle="collapse" data-target="#form-container">
+				<span class="glyphicon glyphicon-collapse-down"></span>
+				Task Creator
+			</button>
+
+			<article>
+				<!--Contains the form-->
+				<div id="form-container" class="col-centered
+						 col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 collapse">
+
+					<form id="form"	id="collapse1" class="" action="POST">
+
+						<div class="form-group">
+							<label for="title">Title</label>
+							<input id="title" class="form-control col-centered" type="text"
+										 placeholder="Provide A Disctiptive Title." autofocus>
+						</div>
+
+						<div id="title-error" class="error-div text-danger form-group"></div>
+
+						<div class="form-group">
+							<label for="title">Discription</label>
+							<textarea id="discription" class="form-control col-centered" 
+												rows="8" placeholder="A few words..."></textarea>
+						</div>
+
+						<div id="discription-error" class="error-div text-danger"></div>
+
+						<div class="form-group">
+							<label for="date">Date</label>
+							<input id="date" class="form-control col-centered" type="text" 
+							   		 required pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="DD/MM/YYYY" name="date">
+						</div>
+
+						<div id="date-error" class="error-div text-danger"></div>
+
+						<div class="form-group">
+							<label for="time">Time</label>
+							<input id="time" class="form-control col-centered" type="text" 
+										 pattern="\d{1,2}:\d{2}([ap]m)?" placeholder="HH : MM" name="time">
+						</div>
+
+						<div id="time-error" class="error-div text-danger"></div>
+
+						<input id="reset" class="btn btn-default" type="reset" value="reset" name="reset">
+
+					</form>
+
+					<button id="create-button" class="btn btn-default">Create</button>
+				</div>
+			</article>
+
+			<article>
+				<!--Contains the created tasks-->
+				<div id="task-board-container" 
+						 class="container col-centered 
+						 col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
+					<ul>
+
+					</ul>
+					
+				</div>
+
+			</article>
+		</div>
+	</section>
+	<footer>
+		<div id="footer-container" 
+				 class="container col-centered
+				 col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
+			Created By: Eli Usupov - 2017
+		</div>
+	</footer>
+
+</div>
+
+<!--JavaScript-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+	crossorigin="anonymous"></script>
+<script src="./javascript/JS.js"></script>
+
+</body>
+</html>
